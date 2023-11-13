@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News and Media</title>
+    <style>
+         .navigation {
+            
+            background-color: #4f5969;
+            border: 2px solid rebeccapurple;
+            height: 482px;
+        }
+
+        nav {
+            float: right;
+            margin-right: 10%;
+        }
+
+        nav li {
+            display: inline-block;
+            padding: 0px 10px 0px 20px;
+        }
+
+        nav li a {
+            color: white;
+            font-size: large;
+            text-decoration: none;
+        }
+
+        nav li a:hover {
+            text-decoration: underline;
+        }
+
+        #main-heading {
+            margin: 2% 0% 0% 20%;
+            font-size: xx-large;
+            color: orangered;
+        }
+
+        #tagline {
+            margin: 15% 0% 0% 11%;
+            font-size: large;
+            color: white;
+        }
+
+        #heading2 {
+            margin: 1% 0% 0% 10%;
+            font-size: 70px;
+            font-weight: bolder;
+            color: white;
+        }
+        .div_heading,
+        .div_nav {
+            padding-left: 0%;
+            display: inline-block;
+            /* Display them as inline-block elements */
+            vertical-align: top;
+            /* Align them to the top */
+            width: 45%;
+            /* Divide the width equally (you can adjust this as needed) */
+        }
+
+        /* Some additional styles for illustration purposes */
+        .div_heading {
+            /* background-color: lightblue; */
+            padding: 20px;
+        }
+
+        .div_nav {
+            /* background-color: lightgray; */
+            padding: 0px;
+            float: right;
+        }
+        .card-container {
+            margin-top: 5%;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .card {
+            width: 30%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px 1px rgb(195 179 179 / 69%);
+    text-align: center;
+        }
+
+        .card img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: orangered;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: orange;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+            margin-top: 3%;
+        }
+
+        .grid-item {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 20px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: orangered;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: orange;
+        }
+        iframe{
+            margin: 2% 0% 0% 24%;
+            /* align-items: center; */
+            width: 51%;
+        }
+        .investing{
+            display: flex;
+            margin: 7% 0% 0% 0%;
+            background-color: #4f5969;
+            color: white;
+        }
+        .investing p{
+            margin: 5% 20% 5% 10%;
+        }
+        button{
+            width: 20%;
+            height: 45px;
+            margin: 4% 15% 3% 1%;
+            padding: 0px 0px 00px 0px;
+            border-radius: 40px;
+            background-color: orangered; 
+            border: none;
+            color: white;
+        }
+        .navbar{
+            margin: 1% 3% 0% 20%;
+            /* border: 1px solid red; */
+            float: right;
+            display: inline-block;
+        }
+        .navbar a{
+            margin-right: 5px;
+            padding: 0px 10px 0px 10px; 
+            text-decoration: none;
+            color: black;
+        }
+        .navbar a:hover{
+            text-decoration: underline;
+        }
+        #footer{
+            margin-bottom: 1%;
+            display: flex;
+        }
+        #copyright{
+            margin: 1% 0% 0% 10%;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="navigation">
+        <div class="div_heading">
+
+            <p id="main-heading">INVEST-O-BULLS</p>
+        </div>
+        <div class="div_nav">
+            <nav style="margin-right: 2%; margin-top: 3.5%; ">
+                <ul style="padding-left: 0%;">
+                    <li><a href="invest home.html">Home</a></li>
+                    <li><a href="invest about.html">About</a></li>
+                    <li><a href="invest whatwedo.html">Services</a></li>
+                    <li><a href="invest whychooseus.html">Why Chose Us</a></li>
+                    <li><a href="invest news.html">News & Media</a></li>
+                    <li><a href="invest contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <p id="tagline">Updates</p>
+        <p id="heading2">News & Media</p>
+    </div>
+
+    <iframe width="420" height="500" src="https://www.youtube.com/embed/v6ZmZ2LBd6o">
+    </iframe>
+
+    <div class="card-container">
+        <div class="card">
+            <img src="data:image/png;base64,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"
+                alt="Image 1">
+            <h2>Mint Finance</h2>
+            <a href="https://www.livemint.com/money/personal-finance" class="btn">Click Here</a>
+        </div>
+
+        <div class="card">
+            <img src="data:image/jpeg;base64,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"
+                alt="Image 2">
+            <h2>Money Control</h2>
+            <a href="https://www.moneycontrol.com/" class="btn">Click Here</a>
+        </div>
+
+        <div class="card">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATEAAAClCAMAAAADOzq7AAABPlBMVEX///+wr7D///0AAAD8///tzcrAACe/H0PCIz8jHyAhHR7+/P75//zIOFX8/Pzuwca7ACnBAC7HU1wYExS+ADTw8PBiYWEJAAC8ACBycnITDhCHh4fhsbCXl5ePj49OTk7NzM13foTV1dXk5OQkHR/09PR7gohycHFvdnzo6Oh6gYeLkpjLy8vCwsKnp6dWVVa4u8IXERahpqyPlJq3t7e5IEJ+fH2jqrO/BzkqJyo1MzRCPj+uEjK8JTvisbe1ACnknabTfITKYWnNbnbijJjv5OHIRlrRjJL22dvBLEu9V2jIH0jIADizLUa/ZXG3QFXRnaLPsrS7oqW/cnyoGjbHgozm0c3L19O3zdGwq7aqnKWjuLuVpaupanO0SGKdfYfn3dd9lZdlgIWNamx/eYSkTFiFc3SwLkuOqqKfUGamgqEUAAAOp0lEQVR4nO2dj0PbNhbH5cQt2E5VqONkJEtw7Do/SBxS2/kBtNB2Ze0Kba+3u+22sRvtru3d//8P3HuS8zuhqLcYxukLBP+QZemT96QnyQHSU6QEFG0RhUiJSIEvalBKr7ogfxohMeOqC/GnkiK9UlCSmKgkMVFJYqKSxEQliYlKEhOVJCYqSUxUkpioJDFRSWKiksREJYmJShITlSQmKklMVJKYqCQxUUliopLERCWJiUoSE5UkJipJTFSSmKgkMVFJYqKSxEQliYlKEhOVJCYqSUxUkpioJDFRSWKiksREJYmJShITlSQmKklMVJKYqCQxUUliopLERCWJiUqIWMpQU/AKWypo7vSiY1erhcWcS5QxRD4vKUZMTT189Gj9pulQ6J0WIpZRyVfZo6PbN0hHR4PNw4zIJ5iFiIGNbzy6dcN0b/MQ25rVEDMyYGPXra3636SSe5tfr5qYkbpBUlNXQIym8Ia4AVtskxKqXkHtv0SJEJs4oBoGpZkMsW49fvL02zt3vn36zbPDY1XNqAYx/hTum2HEVtbyzxEzKMA5Pnw62BiA1tbW1weDo9Nvn79IQbcqFOVclZImRlVy/KR7NOiujbR+0u1mBy/vXrtodrFWTCxlkNvQjvEdNZOiqvesO1hboEH26QtVpamMUPGvQEkSQ4u7+93RIl6M2dFzQ73+jpkosQx9/HAZL9TDly+uv2uumBjEezGxlEpU+uToZO2E0znpzvKCA6evbkGneb2hJdLyIzGqqsZr7CCz2c3N7GC9u74+x2ytO3h4V6XzxC77h6iS+ItViREzMsbrrzYHb17/5e3bt3/9/k72aFEH0D352wuh0kwooT/vtWqvHBEj9O/rz9/+0Gi4rnPuuD/6b1/fmWfWBcc8jicGPHesyxUQU1oChfsirZpYihEDZ1FvfW1ZruM4URT5jg1q/fj9q7X51iz7NGOw9r+VHqtxmXsZmLK8altLiBhUB2i1m0r/rN8JQjsotVu2/4/Oh+zJ2jS1k+7GY2jKVCSmjXQ5Ypqu5UsChfsiJUMM3ncn8s8d22mV207QDPtBsRP81Ol0fn4zmDYz6A8GL2Ds/iXE9JtAbDhK8nzn/Nw9Rzm2D2am9IOwFXV++fnV6axjDp4QtEpGTI+9clxCyr745mS54ei+aaZL4/1xwsmLpkXjk5gXHaYkE90InUjGa5TQuBJ80uXEHJTfcUI0MwWQvZnrAB6+4O2YphVyDd7yL63upY5O8J45O45H6ASchVnFpxMi5iGmc9flxLDdt/0wDIIwVH4JPp3OtP/Zb/BaRqw2WRnH933XU5RRf+j57XZbcYbF9/F8XD0bz0TWsK5WxFPO1hQONPBU5I5gOgruW/FZvKdDo7YD7zpmnhQx7CTPz88ngHX8TifoQx8QnJVerc8a2TFcYwMxszasGb7U0vn07nY6rdt8391PF/J4zOM3K8B2mafupfP5fDqt2XzX0dKYMJ2bjXEpUfAqUDs+UsaU+fSewxHW4FQuh+cVONFLyiupPSLGvBJNDJr9agW6gH5w9mt2htjR4Swxpq2CrpkmWN4uZ7ib5/1CXNthXwln/LjXKGzjiZSxW8A2EVLOld0zdZZSzzts307zfXOfQ+nBlbqJORfw+oikEiFmtZhXHiMv37VjYCBwy34QNP853ZR1s69TnFih59Ry5UbsMVtQehMpmRZi8faQSWHou4wYa/kpKeY1Xc/jPvMuDxnkkXVvtoRISEdKMfZyHunh2+AyQwZiOtvXCtAVF7YSIuZyYqBGVG5jAMuI9fv9atgBv/xthhgE/pyYtq8XzPReHFwAMTNXgipARIttE9SlUM6Zmrk9IhZHFzWo3nYbUzLLsVjcgSlzMwVMMUuO9uA882fG+gDuMUlsv41vS29b180cTYaY3YrdsuGDFzYDZUQMYgyws3cfZuYysrfUOLpgvtQbEtPz5QYc5mMARsxV0nPEVAJw8kUPU8bEYMtrpzV9d7aEQEzXyPaINRAzax4nRjixBzV6H3Mq4RuWjI1R3+bEjhXoH4FQE0yr04GQDFTN+T+9+w3G4FPEDmNimokvcZsCxApFd4ZYNE+McGLWNDFrKTGdThPLWTPEvPvg3045OWJeTOy4FfbRpMJms1qFGLaP9MLwLPjXu+8eTY2UNh9zYrqWm4j554hp+gPnDyCmfZ6Yligx0ugwYsdREJZLxQoAA2LVnSoLyNDgwnczYSyE/awd03Nk19Tuaw2DE9PGxCixMCpYSqxQbGDQwIjBVj7dUC5J7EHOyk8SKyRuY0AM2zFXOev3HNcu13cQWHWnUt9h9tashO9/nxsoQYQAqmHl7+vWPDFgViqVytZSYj2iRBGPdj1IWSQXEDswrxcxt+MDMQhWtyC6sB2/Wq8DsUqlUkdeDF/11SyxDJ8fYza2mBiTe/BgATHs4fZshnWU0tk2lxPLF9KjvvJKiZGYWMd2WkG/57s84u8U63UEVomBNcP3b05miTEIxlJibKRNIoguFxAroUenex6hqSG2CGPfZcR6tVpOmSBWmCGmJUnsNnplx+6E/QqEsAwZBhYhMqtz99ypFN//PkfMaFhWozFNTJ+2Ma/HIvQZYhiqHWDQmdciEgPztjBS1czFxEbDz5hY47PEVvbcBbcxC6P7fg38sVQsFks8FAubOeacrEGr7ryfcsvBc4gtH+ztmVvT7dg0MWubdadzNobIashSjwN52jjI7+nLbcwaz2FcC2KqB3F9sFMJGB90xpAFFs1KrsKaMyDWe/9mKh57rEI0fv8+jH8usLFcek/Xd/UFXon+us/GOmg+lO7iiAlyutDGrgWxOOZvlxDQTq/X29qq1EFNiPVZE1bZQYJwoP7xdG3kmN3sDyk+rty6gJinQwTb9uf7Sm4vFg5D43jMxEF0lNaXEPNavh85Q2LmPLH7up5oBEvaEE/Uej60Y9CMhTmAVA9YGIu8EFg9rNcmI7LBsfp5YktHScDBb/nOZASLY/ILoot9CGSKFxJLNuYnbhgojnsO7b5tt3ylxqwKDKxaYe0/qPKv9x/GQ8vBvZTBZxQ/Q0xbGPNTsg0EehPjSi0mtsTG6IGuj0fi14GYFWB84fA5/k4nREwVNLAK54VGVvk4nvDPPiOjOdjlLf/F48pCcbmN4aR+PLE7JDYdwc4S05MmRpQODpTQxnDqNaggsuoYF/wOq71xO3b0Ql1MTLuYmLZ0XDlDbFzCxaOkOWLJjitx1poZGRKDwCIImhBWcH9EZmhpO9Vm9cOQ2OClOia2POb/cmLEj6KIXkti8epbinJi52BiEIlBXIFhBrcuzqtaDZsfh23/0WHG4HUxdxsHGHkO5y60wmXmx4BYYXp+jLVjE3MXu+m06Y2I6WRqXGnmvNlRUqIxPyOGRgbEuIlBJ1lrVpvMyAAW0gMLC5vl2MYGbzy2YIfzYyYL6nVrSEzfLhbiKItxKPR2F83B4rjyoIhzsKzeONuDc6gjYkB0b2RjmtkbWyebc+2ZjDUly1p+oUcVvohYikJL5h47CCwE8ypiMAaNP6eFcUYzDMJPbG5sLXuYQWJ0tCau7xvjef4Cn+fHBGzGceG4soiz9QW0DGZJGLlpBVMbxWPgtTExB++CecaLJmW0OXZl42qJEbffcc5tXAtp4ngSZxLrMS6uUDn7gG7ZPX0ZP3S9xe0LDCV+/GSLr+to+V3e2dWwdguJ8dlICBniM7k0u3JvnhjdM/lN4rUkJ15Lyh/wQDhpYqpBNuNnrVt9JBY0WfuFxIId5IQzZPBTCsP22cfv1ta7693j+GKvZ+Zx1VEbLgDhykgtl04f8MoRC5qjfVzEPOD75nC9kpCSiQuW+W13nPIAlx7n2jHi7LOlTZPXipL2HlvpZPeg+Lbl0zUPZyTtIl6/6hVe/hws26Id+xyAsQ6yWg8CPmMdsol/3AuU/r/fnHTXwSdJXHjSaLVatmMNF8VZX0ls2xot6Tsty2pB3MLT4yNWbnzKwmklZzTApo7NUtoxppbdGj404GFYzW4S72M2fJ0d18RbuAPFaHkuu1NixCixbKePzf0OWlawQH7w62n36LE697g1JWNivYkD+KNOJSNk2l/mn0+ZecyCDjOiU1dSos5dxI8kY2P8GUXi+dV6ldPqMET9+AcNjL2cfdp4fsET/SNic7X547UoWzZhkejT6W6A/8g3gp8Q/6Vv2FEivs/+wS/0pr/851nqgufTFxJLWgkSoxBj4JMyoHIHOLXLEHgjMvj2GbjOTw65aOYJiOX/D4htjGwsBchcv9Xy7ajTifxiO4LBiu1Aa+25DJ7vEfwk/lJmOba4dMVK1CtRlu23FAUNrc3MzXWdVrvXCoGh87liWI1GY+XPUn9OiRMj1LUjxqpkt3wfaNn48HVJcTyBQlyhkibG+vKG7ft2WWmhwC3h1XUscoluj4f6V6sVE1NH8di0aMNRWrwXiFrOJT/gcD2UWAQ7L+qh4JUk9gmZP0JXR4xO/hZZzLpiZUgCXmlQ+AIRg4tSY7hlLBZPTsjMMTp5FZ06NpsZnd6b3aKzBaGLCzN7IV31M4rcxm6WUi83vxZyCmFig7u37t4g3bp7L7tCYio1bq9v3t4Y6/bkzud1m31NXr3g+qk8L5v/onTjjJbn8tVG9nSFXpmh9NOdG6dPbOVmNcRSxszcDTYEUzvqhZ+ln0oxbkoWJRj/WpTLOO2igpCpLC7OjImujJiRoRlVpRkuFf+gRUrNDJWiTOOzKL4VH+C5pKaSg8ZZUD7LiqnHFc9MCLPEfhA24TU1OksNOr4VKxakg54wvoqnG98qLlJ8rbrC1TcpSUxckpioJDFRSWKiksREJYmJShITlSQmKklMVJKYqCQxUUliopLERCWJiUoSE5UkJipJTFSSmKgkMVFJYqKSxEQliYlKEhOVJCYqSUxUkpioJDFRSWKiksREJYmJShITlSQmKklMVJKYqCQxUUliopLERCWJiUoSE5UkJipJTFSSmKgkMVFJYqKSxEQliYkqIj1FSkS9/wJ+wJgtTRgz5QAAAABJRU5ErkJggg=="
+                alt="Image 3">
+            <h2>5 Paisa</h2>
+            <a href="https://www.5paisa.com/" class="btn">Click Here</a>
+        </div>
+    </div>
+
+    <div class="grid-container">
+        <div class="grid-item">
+            <h2>Time to rebalance your portfolio? Check out these aggressive hybrid funds</h2>
+            <p>This Moneycontrol analysis has taken care to cull out schemes that come with a good track record, but this is not a recommendation. You can consider the two aggressive hybrid funds that are part of MC30 for investing. </p>
+            <a href="https://www.moneycontrol.com/news/photos/business/personal-finance/time-to-rebalance-your-portfolio-check-out-these-aggressive-hybrid-funds-11478801.html"
+                class="btn"> Know More</a>
+        </div>
+        <div class="grid-item">
+            <h2>PMS managers exited from these midcap stocks: Check your portfolio</h2>
+            <p>PMS managers exited as these stocks either reached their target prices or turned unattractive due to weak
+                prospectsespite bouts of volatility, domestic barometer indices have been on an uptrend and record-making spree over the last six months. </p>
+            <a href="https://www.moneycontrol.com/news/photos/business/personal-finance/heres-the-midcap-stocks-where-pms-cut-exposure-check-your-portfolio-11439611.html"
+                class="btn"> Know More</a>
+        </div>
+        <div class="grid-item">
+            <h2>Sept 30 MF nomination deadline nears, over 25 lakh PAN holders yet to update details</h2>
+            <p>Failure to update nomination on time will result in your MF folios getting frozen for all debit
+                transactions. That is, you will not be able to redeem / make withdrawals from any of these investments.
+                </p>
+            <a href="https://www.moneycontrol.com/news/business/personal-finance/sept-30-mf-nomination-deadline-nears-over-25-lakh-pan-holders-yet-to-update-details-11383121.html"
+                class="btn"> Know More</a>
+        </div>
+        <div class="grid-item">
+            <h2>Groww Mutual Fund receives SEBI nod for launching its first index fund</h2>
+            <p>Groww got the approval of the Competition Commission of India  in September 2021 to acquire
+                Indiabulls Asset Management Company (AMC) and Indiabulls Trustee Company. Groww Nifty Total Markets Index Fund through new fund offering (NFO).</p>
+            <a href="https://www.moneycontrol.com/news/business/announcements/groww-mutual-fund-receives-sebi-nod-for-launching-its-first-index-fund-11327331.html"
+                class="btn"> Know More</a>
+        </div>
+        <div class="grid-item">
+            <h2>MC30 scheme review: Why PGIM India Midcap Opportunities Fund is a long-term wealth creator</h2>
+            <p>PGIM India Midcap Opportunities Fund has delivered below-average returns in the short term. However, its
+                long-term performance has been noteworthy</p>
+            <a href="https://www.moneycontrol.com/news/photos/business/personal-finance/pgim-india-midcap-opportunities-fund-is-a-long-term-wealth-creator-11263451.html"
+                class="btn"> Know More</a>
+        </div>
+        <div class="grid-item">
+            <h2>Quantum Mutual Fund files for multi-asset allocation scheme</h2>
+            <p>The fund house already has Quantum Multi Asset Allocation Fund of Funds which has AUM of Rs 53 crore and
+                invests in various schemes of Quantum mutual fund that feeds into gold, bond and equity funds.</p>
+            <a href="https://www.moneycontrol.com/news/business/personal-finance/quantum-mutual-fund-files-for-multi-asset-allocation-scheme-11244121.html"
+                class="btn"> Know More</a>
+        </div>
+        <div class="grid-item">
+            <h2>SBI Funds completes liquidation of assets in Franklin Templeton MF's six debt schemes</h2>
+            <p>Franklin Templeton in April 2020 announced shutting down of the six debt mutual fund schemes, citing
+                redemption pressures and lack of liquidity in the bond market.</p>
+            <a href="https://www.moneycontrol.com/news/business/markets/sbi-funds-completes-liquidation-of-assets-in-franklin-templeton-mfs-six-debt-schemes-11237481.html"
+                class="btn"> Know More</a>
+        </div>
+        <div class="grid-item">
+            <h2>How diversification helps when investing for your child's education</h2>
+            <p>A good way to diversify one’s portfolio is by investing in different categories of mutual funds according
+                to one’s risk appetite. A balance of debt and equity can help mitigate risk.Diversification plays a crucial role in investing. However, you must rebalance your portfolio from time to time.</p>
+            <a href="https://www.moneycontrol.com/news/business/personal-finance/how-diversification-helps-when-investing-for-your-childs-education-11233221.html"
+                class="btn"> Know More</a>
+        </div>
+        <div class="grid-item">
+            <h2>Samir Arora’s Helios Capital gets final SEBI nod for MF license; AMC to focus on active funds</h2>
+            <p>Arora also divulged that the fund house would look to focus only on active funds. This is against the
+                trend of recent mutual fund house launches, which had focused on passive funds.</p>
+            <a href="https://www.moneycontrol.com/news/opinion/backstop-fund-for-corporate-debt-may-prevent-franklin-templeton-like-crisis-11065791.html"
+                class="btn"> Know More</a>
+        </div>
+    </div>
+    <div class="investing" style="font-size: large;">
+        <p> <strong>Unlock Your Financial Freedom: Start Investing Today!</strong><br><br>"Investing in mutual funds is like planting a tree. It requires patience, but over time, it can grow into something substantial and provide the fruits of financial security."</p>
+        <button>Start Investing</button>
+    </div>
+    <div id="footer">
+
+        <p id="copyright">Copyright 2022 INVEST-O-BULLS | Powered by INVEST-O-BULLS</p>
+            <div class="navbar">
+                <a href="invest home.html">Home</a>
+                <a href="invest about.html">About</a>
+                <a href="invest whatwedo.html">Services</a>
+                <a href="invest whychooseus.html">Why Chose Us</a>
+                <a href="invest news.html">News&Media</a>
+                <a href="invest contact.html">Contact</a>
+            </div>
+    </div>
+</body>
+</html>
+
+
+        
+   

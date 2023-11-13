@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invest-O-Bulls</title>
+    <style>
+        .navigation {
+            /* background-color: rgb(77 97 106); */
+            background-color: #4f5969;
+            border: 2px solid rebeccapurple;
+
+        }
+
+        nav {
+            /* color: aquamarine; */
+            float: right;
+            margin-right: 10%;
+        }
+
+        nav li {
+            display: inline-block;
+            padding: 0px 10px 10px 20px;
+        }
+
+        nav li a {
+            color: white;
+            font-size: large;
+            text-decoration: none;
+        }
+
+        nav li a:hover {
+            text-decoration: underline;
+        }
+
+        #main-heading {
+            margin: 2% 0% 0% 18%;
+            width: 100%;
+            font-size: xx-large;
+            color: orangered;
+        }
+
+        .div_heading,
+        .div_nav {
+            padding-left: 0%;
+            display: inline-block;
+            /* Display them as inline-block elements */
+            vertical-align: top;
+            /* Align them to the top */
+            width: 45%;
+            /* Divide the width equally (you can adjust this as needed) */
+        }
+
+        /* Some additional styles for illustration purposes */
+        .div_heading {
+            /* background-color: lightblue; */
+            padding: 20px;
+        }
+
+        .div_nav {
+            /* background-color: lightgray; */
+            padding: 0px;
+            float: right;
+        }
+
+        #title {
+            margin: 5% 0% 0% 10%;
+            font-size: larger;
+            font-weight: bold;
+            color: white;
+        }
+
+        #heading2 {
+            margin: 3% 0% 0% 10%;
+            font-size: 70px;
+            font-weight: bolder;
+            color: white;
+        }
+
+        #tagline {
+            margin: 3% 0% 0% 10%;
+            font-size: large;
+            color: white;
+        }
+
+        #invest-button {
+            margin: 3% 0% 3% 10%;
+            padding: 10px 20px 10px 20px;
+            border-radius: 20px;
+            background-color: orangered;
+            border: none;
+            color: white;
+        }
+
+        #invest-button:hover {
+            background-color: rgb(228, 88, 37);
+
+        }
+
+        .homehead1 {
+            text-align: center;
+            margin-top: 7%;
+            margin-bottom: 3%;
+            font-size: 45px;
+            font-weight: bolder;
+        }
+
+        .about {
+            display: flex;
+        }
+
+        #image1 {
+            width: 30%;
+            height: 40%;
+            margin: 4% 0% 0% 15%;
+            position: absolute;
+            box-shadow: 0px 0px 10px 6px #0a0a0aa1;
+            border: 1px solid #5c6262;
+        }
+
+        #desp1 {
+            font-size: 20px;
+            margin: 7% 13% 0% 55%;
+            width: 50%;
+        }
+
+        .service {
+            display: flex;
+        }
+
+        .homehead2 {
+            text-align: center;
+            margin-top: 15%;
+            margin-bottom: 3%;
+            font-size: 45px;
+            font-weight: bolder;
+        }
+
+        #image2 {
+            width: 25%;
+            height: 40%;
+            margin: 4% 15% 0% 55%;
+            position: absolute;
+            border-radius: 8px;
+            box-shadow: 0px 0px 13px 5px #bcdada;
+            /* border: 1px solid #5c6262; */
+        }
+
+        #desp2 {
+            margin: 6% 51% 7% 19%;
+            font-size: 22px;
+            width: 50%;
+        }
+
+        .whychooseus {
+            display: flex;
+            /* border: 1px solid black; */
+
+            height: 200px;
+            margin: 5% 20% 0% 20%;
+        }
+
+        .homehead3 {
+            text-align: center;
+            margin-top: 7%;
+            font-size: 30px;
+            font-weight: bolder;
+        }
+
+        .box {
+            /* border: 1px solid orangered; */
+            border-radius: 10px;
+            width: 30%;
+            margin: 1% 5% 1% 5%;
+            padding: 5% 3% 0% 3%;
+            background-color: white;
+            box-shadow: 5px 5px 5px 5px #cee0e0;
+            text-align: center;
+        }
+
+        .box img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .homehead3 {
+            text-align: center;
+            margin-top: 8%;
+            font-size: 30px;
+            font-weight: bolder;
+        }
+
+        #quote {
+            text-align: center;
+            margin: 1% 30% 0% 30%;
+            font-size: 20px;
+            /* font-weight: bolder; */
+        }
+
+        #peter {
+            width: 90px;
+            height: 90px;
+            border: 1px solid orangered;
+            border-radius: 50px;
+
+        }
+
+        .navbar {
+            margin: 5% 3% 0% 20%;
+            /* border: 1px solid red; */
+            float: right;
+            display: inline-block;
+        }
+
+        .navbar a {
+            margin-right: 5px;
+            padding: 0px 10px 0px 10px;
+            text-decoration: none;
+            color: black;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        #footer {
+            margin-bottom: 2%;
+            display: flex;
+        }
+
+        #copyright {
+            margin: 5% 0% 0% 10%;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navigation">
+        <div class="div_heading">
+
+            <p id="main-heading">INVEST-O-BULLS</p>
+        </div>
+        <div class="div_nav">
+            <nav style="margin-right: 2%; margin-top: 3.5%; ">
+                <ul style="padding-left: 0%;">
+                    <li><a href="invest home.html">Home</a></li>
+                    <li><a href="invest about.html">About</a></li>
+                    <li><a href="invest whatwedo.html">Services</a></li>
+                    <li><a href="invest whychooseus.html">Why Chose Us</a></li>
+                    <li><a href="invest news.html">News & Media</a></li>
+                    <li><a href="invest contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <p id="title">Mutual Fund Recommendation</p>
+        <p id="heading2">INVEST-O-BULLS</p>
+        <p id="tagline">Equity mutual funds are the perfect solution for people who want to own stocks without doing
+            there own research</p>
+        <a href="register.php"><button id="invest-button">Start Investing</button></a>
+    </div>
+    <div>
+        <div class="homehead1">Who We Are</div>
+        <div class="about">
+            <img src="https://images.livemint.com/img/2022/06/08/600x338/QG1W5J1M_1599667946456_1599667952009_1654701936783.jpg"
+                alt="" id="image1">
+
+            <p id="desp1"><strong>INVEST-O-BULLS</strong></br></br>At INVEST-O-BULLS, we pride ourselves on being your
+                ultimate destination for expert mutual fund recommendations and personalized investment guidance. Our
+                website is designed to empower investors of all levels of experience, from beginners to seasoned
+                professionals, in making informed and strategic decisions to grow their wealth.</p>
+        </div>
+        <div class="homehead2">What We Do</div>
+        <div class="service">
+
+            <p id="desp2"><strong>INVEST-O-BULLS</strong></br></br>
+                We understand that each investor's financial decisions are unique. That's why we offer personalized
+                recommendations based on your individual investment goals, time horizon, and risk tolerance. Our goal is
+                to ensure that you have a diversified portfolio aligned with your long-term objectives. We believe that
+                everyone deserves reliable and personalized investment advice, and our platform is designed to provide
+                exactly that.</p>
+            <img src="https://img.freepik.com/premium-vector/stock-exchange-data-illustration_23-2148588124.jpg" alt=""
+                id="image2">
+        </div>
+        <div class="homehead3">Why Choose Us</div>
+        <div class="whychooseus">
+            <div class="box"><img src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX5629596.jpg"
+                    alt=""><br><strong>Always on time</strong><br>Respect your deadline like it is a</div>
+            <div class="box"><img
+                    src="https://t3.ftcdn.net/jpg/05/66/60/32/360_F_566603211_eQVWq7TQfzJ1osI8AmwvifZ4WVFOXeRn.jpg"
+                    alt=""><br><strong>Hard working</strong><br>Nothing will work unless you do</div>
+            <div class="box"><img
+                    src="https://icones.pro/wp-content/uploads/2022/08/icone-du-calendrier-des-evenements-orange.png"
+                    alt=""><br><strong>24/7 Availability</strong><br>Always available around the clock</div>
+        </div>
+        <div class="homehead3">"</div>
+        <p id="quote">Equity mutual fund are the perfect solution for people who want to own stocks without doing their
+            own
+            research <br><br> <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRftD-rURUh-zWd7u09Cm1hBVb83CB6XrtOsQ&usqp=CAU"
+                alt="" id="peter"><br>Peter Lynch</p>
+        <div id="footer">
+
+            <p id="copyright">Copyright 2022 INVEST-O-BULLS | Powered by INVEST-O-BULLS</p>
+            <div class="navbar">
+                <a href="invest home.html">Home</a>
+                <a href="invest about.html">About</a>
+                <a href="invest whatwedo.html">Services</a>
+                <a href="invest whychooseus.html">Why Chose Us</a>
+                <a href="invest news.html">News&Media</a>
+                <a href="invest contact.html">Contact</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

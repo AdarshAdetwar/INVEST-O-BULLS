@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        .navigation {
+            /* background-color: rgb(77 97 106); */
+            background-color: #4f5969;
+            border: 2px solid rebeccapurple;
+            height: 482px;
+        }
+
+        nav {
+            /* color: aquamarine; */
+            float: right;
+            margin-right: 10%;
+        }
+
+        nav li {
+            display: inline-block;
+            padding: 0px 10px 0px 20px;
+        }
+
+        nav li a {
+            color: white;
+            font-size: large;
+            text-decoration: none;
+        }
+
+        nav li a:hover {
+            text-decoration: underline;
+        }
+
+        #main-heading {
+            margin: 2% 0% 0% 20%;
+            font-size: xx-large;
+            color: orangered;
+        }
+
+        #tagline {
+            margin: 15% 0% 0% 11%;
+            font-size: large;
+            color: white;
+        }
+
+        #heading2 {
+            margin: 1% 0% 0% 10%;
+            font-size: 70px;
+            font-weight: bolder;
+            color: white;
+        }
+
+        .service {
+            display: flex;
+        }
+
+        .homehead2 {
+            text-align: center;
+            margin-top: 7%;
+            font-size: 50px;
+            font-weight: bolder;
+        }
+
+        #image2 {
+            width: 37%;
+            height: 380px;
+            margin: 4% 15% 0% 55%;
+            /* border: 1px solid black; */
+            position: absolute;
+            box-shadow: 0px 0px 10px 5px #6ca5a5;
+        }
+
+        #desp2 {
+            margin: 3% 30% 0% 3%;
+            font-size: larger;
+        }
+
+        #desptitle1 {
+            margin: 3% 30% 0% 3%;
+            margin-top: 0%;
+            font-size: 50px;
+            /* font-weight: 300px; */
+        }
+
+        #desptitle2 {
+            margin: 5% 30% 0% 3%;
+            font-size: 23px;
+        }
+
+        #aboutdesp {
+            margin: 3% 30% 0% 3%;
+        }
+
+        #quote1 {
+            text-align: center;
+            font-size: 40px;
+            font-weight: bolder;
+            margin: 0% 10% 0% 15%;
+        }
+
+        #con_head {
+            text-align: center;
+            font-weight: bolder;
+            margin: 10% 20% 0% 20%;
+        }
+
+        #advice {
+            text-align: center;
+            font-size: 20px;
+            margin: 3% 8% 3% 10%;
+
+        }
+
+        .aboutbox {
+            display: flex;
+            margin: 0% 10% 0% 10%;
+            /* border: 1px solid black; */
+
+        }
+
+        .box {
+            border: 0px solid #5c6262;
+            box-shadow: 0px 0px 20px 0px #868b8b;
+            border-radius: 10px;
+            width: 40%;
+            background-color: #bfbfc34a;
+            height: 50%;
+            font-size: large;
+            margin: 3% 5% 0% 5%;
+            padding: 21px;
+
+        }
+
+        #team {
+            text-align: center;
+            font-size: 40px;
+            font-weight: bolder;
+            margin-top: 5%;
+        }
+
+        #teamquote {
+            text-align: center;
+            margin: 1% 15% 0% 15%;
+        }
+
+        .circle {
+            display: flex;
+            margin: 0% 0% 0% 0%;
+            /* border: 1px solid red; */
+        }
+
+        .circle p {
+            margin: 1% 0% 0% 0%;
+        }
+
+        .memeber {
+            display: flex;
+        }
+
+        .imagebox {
+            width: 100px;
+            height: 100px;
+            margin: 3% 4% 0% 18%;
+            /* padding: 10px; */
+            border: 3px solid #5c6262;
+            border-radius: 50px;
+        }
+
+        #name1 {
+            margin-left: 18%;
+            text-align: center;
+        }
+
+        #name2 {
+            margin-left: 21.7%;
+            text-align: center;
+        }
+
+        #name3 {
+            margin-left: 21.6%;
+            text-align: center;
+        }
+
+        .investing {
+            display: flex;
+            margin: 7% 0% 0% 0%;
+            background-color: #4f5969;
+            color: white;
+        }
+
+        .investing p {
+            margin: 5% 20% 5% 10%;
+        }
+
+        button {
+            width: 20%;
+            height: 45px;
+            margin: 4% 15% 3% 1%;
+            padding: 0px 0px 00px 0px;
+            border-radius: 40px;
+            background-color: orangered;
+            border: none;
+            color: white;
+        }
+
+        .navbar {
+            margin: 1% 3% 0% 20%;
+            /* border: 1px solid red; */
+            float: right;
+            display: inline-block;
+        }
+
+        .navbar a {
+            margin-right: 5px;
+            padding: 0px 10px 0px 10px;
+            text-decoration: none;
+            color: black;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        #footer {
+            margin-bottom: 1%;
+            display: flex;
+        }
+
+        #copyright {
+            margin: 1% 0% 0% 10%;
+
+        }
+
+        .div_heading,
+        .div_nav {
+            padding-left: 0%;
+            display: inline-block;
+            /* Display them as inline-block elements */
+            vertical-align: top;
+            /* Align them to the top */
+            width: 45%;
+            /* Divide the width equally (you can adjust this as needed) */
+        }
+
+        /* Some additional styles for illustration purposes */
+        .div_heading {
+            /* background-color: lightblue; */
+            padding: 20px;
+        }
+
+        .div_nav {
+            /* background-color: lightgray; */
+            padding: 0px;
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navigation">
+        <div class="div_heading">
+
+            <p id="main-heading">INVEST-O-BULLS</p>
+        </div>
+        <div class="div_nav">
+            <nav style="margin-right: 2%; margin-top: 3.5%; ">
+                <ul style="padding-left: 0%;">
+                    <li><a href="invest home.html">Home</a></li>
+                    <li><a href="invest about.html">About</a></li>
+                    <li><a href="invest whatwedo.html">Services</a></li>
+                    <li><a href="invest whychooseus.html">Why Chose Us</a></li>
+                    <li><a href="invest news.html">News & Media</a></li>
+                    <li><a href="invest contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <p id="tagline">A few words</p>
+        <p id="heading2">ABOUT US</p>
+    </div>
+    <div class="homehead2">Who We Are</div>
+    <div class="service">
+        <div id="aboutdesp">
+            <h3 style="margin-left: 3.5%;">Exceptional Services</h3>
+            <h2 id="desptitle1">Practical Financial Advice You Can Count On</h2>
+
+            <h3 id="desptitle2">Focus your time on your buisness and leave the investing to us </h3>
+            <p id="desp2">Welcome to our mutual fund recommendation website! We are a dedicated team of financial
+                experts and technology enthusiasts who are passionate about helping individuals achieve their financial
+                goals through smart investing in mutual funds.Our mission is to empower and educate investors,
+                regardless of their financial expertise, to make informed decisions when it comes to mutual fund
+                investments.</p>
+        </div>
+        <img src="https://images.creativemarket.com/0.1.0/ps/8685946/1820/1213/m1/fpnw/wm1/qypnjnsggrooaq9pewyuvqwuoltmofyw0buxyoaoknuuxjkybmbnm39oxbfmsdkt-.jpg?1&s=c6f6991a51adb79e22bda1a621701c87"
+            alt="" id="image2">
+    </div>
+
+    <h2 id="con_head">Accounting Services</h2>
+    <p id="quote1">"Unlock the potential of your money with carefully </br> choosen mutual funds - the key to long
+        term
+        </br> wealth
+        creation"</p>
+    <p id="advice">We love hearing from you if you have any questions, feedback or need any assistance don’t
+        hesitate to
+        reach to our customer support team. We are here to help you and assist you on your investment journey.</p>
+    <div class="aboutbox">
+        <p class="box">We understand that each investor's financial situation is unique. That's why we offer
+            personalized recommendations based on your individual investment goals, time horizon, and risk appetite.
+        </p>
+        <p class="box">We take the security and privacy of your personal and financial information seriously. Our
+            website is built with robust security measures to safeguard data and ensure a safe browsing experience.
+        </p>
+    </div>
+
+    <h2 id="team">OUR TEAM</h2>
+    <p id="teamquote" style="font-size: larger;">"Dedicated creators of mutual fund websites, strives to provide innovative solutions that empower investors with comprehensive financial insights.
+    </p>
+    <div class="member">
+        <img src="cafe.jpeg" alt="" class="imagebox" id="name1">
+        <img src="cafe.jpeg" alt="" class="imagebox">
+        <img src="cafe.jpeg" alt="" class="imagebox">
+    </div>
+    <div class="circle">
+        <p id="name1"> <strong> Adarsh Adetwar </strong> <br> Founder</p>
+        <p id="name2"> <strong> Sakshi Dhoke </strong> <br> Founder</p>
+        <p id="name3"> <strong> Hruturaj Chopade </strong> <br> Founder</p>
+    </div>
+    <div class="investing" style="font-size: large;">
+        <p> <strong>Unlock Your Financial Freedom: Start Investing Today!</strong><br><br>"The stock market is filled with individuals who know the price of everything, but the value of nothing. Mutual funds allow you to invest with a team of professionals who do the opposite."</p>
+        <button>Start Investing</button>
+    </div>
+    <div id="footer">
+
+        <p id="copyright">Copyright 2022 INVEST-O-BULLS | Powered by INVEST-O-BULLS</p>
+            <div class="navbar">
+                <a href="invest home.html">Home</a>
+                <a href="invest about.html">About</a>
+                <a href="invest whatwedo.html">Services</a>
+                <a href="invest whychooseus.html">Why Chose Us</a>
+                <a href="invest news.html">News&Media</a>
+                <a href="invest contact.html">Contact</a>
+            </div>
+    </div>
+</body>
+
+</html>

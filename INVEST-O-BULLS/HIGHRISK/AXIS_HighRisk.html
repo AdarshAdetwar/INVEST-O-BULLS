@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.js"
+        integrity="sha512-CWVDkca3f3uAWgDNVzW+W4XJbiC3CH84P2aWZXj+DqI6PNbTzXbl1dIzEHeNJpYSn4B6U8miSZb/hCws7FnUZA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        .body {
+            background-color: #F1F4F8;
+        }
+
+        .container {
+            border: 0.5px solid rgb(0, 0, 0);
+            margin-left: 4vw;
+            box-shadow: 0 0 20px 6px #bbcde4;
+            border-radius: 10px;
+            width: 60%;
+            height: 40%;
+            font-size: 0.9rem;
+        }
+
+        .box {
+            display: flex;
+            font-size: larger;
+            margin: 10px 10px 0px 10px;
+        }
+
+        .column {
+            width: 50%;
+            height: 150px;
+            margin: 2px 17px 2px -3px;
+        }
+
+        .content {
+            display: flex;
+            padding-top: 1px;
+            padding-bottom: 1px;
+            width: 80%;
+            height: 40px;
+            margin: 2px 2px 2px 50px;
+            text-indent: 10px;
+        }
+
+        .title {
+            width: 141px;
+        }
+
+        .value1 {
+            width: 100px;
+            text-align: right;
+            padding-right: 10px;
+            color: #606f7b;
+        }
+
+        .chart-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        #myChart {
+            max-width: 88%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div style="width: 90%; margin-left: auto; margin-right: auto; padding-bottom: 50px; padding-top: 1px; height: 60%; border: 1px solid #FFFFFF; box-shadow: 0 0 20px 6px #e3e7ed; border-radius: 8px; margin-top: 37px;">
+        <div class="B1">
+            <div style="width: 65%;">
+                <h1 style="margin-left: 14vw; font-size: xxx-large;">Axis Small Cap Fund</h1>
+            </div>
+            <img width="30px" height="30px" style="margin-right: 81px; margin-top: -121px; float: right; height: 333px; width: 333px;" class="media-object" src="https://img.smartspends.com/static/images/amc_logo/axis.png" alt="Kotak Small Cap Fund">
+            <div class="container">
+                <div class="box">
+                    <div class="column">
+                        <div class="content">
+                            <p class="title">Exit Load</p>
+                            <p class="value1" id="marketValue"></p>
+                        </div>
+                        <div class="content" id="middlebox">
+                            <p class="title">Current NAV</p>
+                            <p class="value1" id="stockValue"></p>
+                        </div>
+                        <div class="content">
+                            <p class="title">AUM (Fund Size)</p>
+                            <p class="value1" id="roceValue"></p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="content">
+                            <p class="title">Return</p>
+                            <p class="value1" id="priceValue"></p>
+                        </div>
+                        <div class="content" id="middlebox">
+                            <p class="title">Min. Investment</p>
+                            <p class="value1" id="bookValue"></p>
+                        </div>
+                        <div class="content">
+                            <p class="title">Expense ratio</p>
+                            <p class="value1" id="roeValue"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="width: 90%; margin-left: auto; margin-right: auto; padding-bottom: 50px; padding-top: 1px; height: 60%; border: 1px solid #FFFFFF; box-shadow: 0 0 20px 6px #e3e7ed; border-radius: 8px; margin-top: 37px;">
+        <div class="chart-container">
+            <canvas id="myChart"></canvas>
+        </div>
+    </div>
+    <script>
+        let labels = ['2018', '2019', '2020', '2021' , '2022' , '2023'];
+        let itemData = ['29.42', '28.11' , '34.1' , '51.2', '75.8'];;
+        const data = {
+            labels: labels,
+            datasets: [{
+                label: 'Your Data',
+                data: itemData,
+                // backgroundColor:'#a8b9c7',
+                bordercolor:'#a8b9c7',
+                fill:true,
+                tension:0.4
+            }]
+        };
+
+        const config = {
+            type: 'line',
+            data: data,
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                    },
+                },
+            },
+        };
+
+        const myChart = new Chart(
+            document.getElementById('myChart'),
+            config
+        );
+
+        document.getElementById("marketValue").innerHTML = "1.0%";
+        document.getElementById("stockValue").innerHTML = "₹87.59";
+        document.getElementById("roceValue").innerHTML = "₹ 16,175 Crs";
+        document.getElementById("priceValue").innerHTML = " 24.45% p.a.";
+        document.getElementById("bookValue").innerHTML = "SIP ₹100";
+        document.getElementById("roeValue").innerHTML = "0.54%";
+    </script>
+</body>
+</html>
